@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#1A237E"
-    android:weightSum="1">
+    android:background="@drawable/android_bg"
+    android:weightSum="1"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
@@ -11,9 +11,15 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/header"
         android:id="@+id/textView"
-        android:textSize="100sp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp" />
+        android:textSize="80sp"
+        android:layout_marginTop="25dp"
+        android:typeface="monospace"
+        android:layout_marginLeft="25dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/white"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -21,9 +27,20 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/second_Header"
         android:id="@+id/textView2"
-        android:layout_gravity="center_horizontal"
         android:textSize="22sp"
-        android:padding="5dp" />
+        android:padding="5dp"
+        android:typeface="monospace"
+        android:layout_marginLeft="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/second_Header2"
+        android:id="@+id/textView3"
+        android:textSize="22sp"
+        android:typeface="monospace"
+        android:layout_marginLeft="25dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -33,6 +50,8 @@
         android:textColor="#1A237E"
         android:backgroundTint="#EEEEEE"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="25dp" />
+        android:typeface="monospace"
+        android:layout_marginTop="100dp"
+        android:nestedScrollingEnabled="false" />
 
 </LinearLayout>
